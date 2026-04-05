@@ -24,7 +24,7 @@ app.post("/chat", async (req, res) => {
     });
 
     const data = await aiRes.json();
-
+console.log(data);
     const reply =
       data.output?.[0]?.content?.[0]?.text || "Non so cosa dire 😅";
 
